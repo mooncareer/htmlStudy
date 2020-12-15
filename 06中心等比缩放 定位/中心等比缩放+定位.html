@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .pic{
+            width: 276px;
+            height: 277px;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            
+        }
+        img{
+            transition: 1s linear;
+        }
+        .pic:hover img{
+            transform: scale(1.5);
+        }
+        .text1{
+            height: 100px;
+            width: 276px;
+            background: rgb(0,0,0,0.5);
+            position: absolute;
+            color: white;
+            text-align: center;   
+            bottom: 0;
+            
+        }
+        a{
+            border: black 1px solid;
+            text-decoration: transparent;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--分析：一个盒子放图片，一个盒子放文字，
+        上面那行字用p标签，下面那行字用a标签，两行字位于一个盒子中  -->
+    <div class="pic">
+        <img src="1.png" alt="图片跑了">
+        <div class="text1">
+                <p class="t1">
+                    你懂了吗？
+                </p>
+                <a href="#" class="t2">
+                    不懂就点！
+                </a>
+            
+        </div>
+    </div>
+    <!-- 遇到问题：
+            1.在使用定位时，父元素相对，子元素绝对，并且添加了overflow：hidden；，子元素不显示？
+                解决办法：子元素的参照物是父元素，因此要加上子元素相对于父元素的位置，如：bottom：0；
+            2.将p标签和a标签放在一个盒子中，使用line—height：盒子高度；时只有p标签居中，a标签不居中？
+                解决办法：
+            3.如何给一个a标签添加一个给定大小的边框？？？？
+    -->
+    <div class="pic">
+        <img src="2.png" alt="图片跑了">
+        <div class="text1">
+                <p class="t1">
+                    你懂了吗？
+                </p>
+                <a href="#" class="t2">
+                    不懂就点！
+                </a>
+            
+        </div>
+    </div>
+    <div class="pic">
+        <img src="1.png" alt="图片跑了">
+        <div class="text1">
+                <p class="t1">
+                    你懂了吗？
+                </p>
+                <a href="#" class="t2">
+                    不懂就点！
+                </a>
+            
+        </div>
+    </div>
+    <div class="pic">
+        <img src="2.png" alt="图片跑了">
+        <div class="text1">
+                <p class="t1">
+                    你懂了吗？
+                </p>
+                <a href="#" class="t2">
+                    不懂就点！
+                </a>
+            
+        </div>
+    </div>
+</body>
+</html>
