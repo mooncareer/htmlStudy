@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        img{
+            /* 图片自适应浏览器的宽高 */
+            width: 100%;
+            /* 垂直对齐只对img有效 */
+            vertical-align: middle;
+        }
+        .text1{
+            width: 100%;
+            height: 28px;
+            background: #a4b5ca;
+            font-size: 12px;
+            color: #0b1c31;
+        }
+        p{
+            float: right;
+            line-height: 28px;
+        }
+        .bottom{
+            height: 54px;
+            background: #fff;
+        }
+        .pic2{
+            margin-top: 10px;
+            margin-left: 21px;
+            float: left;
+        }
+        a{
+            
+            text-decoration: none;
+            color: #343434;
+            padding-right: 11px;
+            font-size: 12px;
+        }
+        .right{
+            float: right;
+            margin-top: 27px;
+        }
+    </style>
+</head>
+<body>
+    <img src="3.jpg" alt="图跑了..." class="pic1">
+    <div class="text1">
+        <p>11.11 来红英，买就减！</p>
+    </div>
+    <div class="bottom">
+        <div class="pic2">
+            <img src="4.jpg" alt="图跑了...">
+        </div>
+        <div class="right">
+            <a href="#">网站地址</a>
+            <a href="#">联系</a>
+            <a href="#">加盟</a>
+            <a href="#">招聘</a>
+            <a href="#">新闻</a>
+        </div>
+    </div>
+    <!-- 
+        1.把那个大图用img插图，再设置一个盒子，用父元素相对，子元素绝对，将该元素置于img的底部
+        2.再设置一个盒子，背景为白色，里面包含两个盒子，图片盒子左浮动，超链接盒子全部右浮动
+        注意：可以依据盒子所处的位置，给盒子起类名，比如right left bottom top center main...
+     -->
+</body>
+</html>

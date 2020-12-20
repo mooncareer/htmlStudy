@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .main{
+            width: 234px;
+            height: 460px;
+            background: rgba(105, 101, 101, 0.6);
+        }
+        ul{
+            /*  
+                整个列表上下离盒子都有一定的距离，内容与盒子之间的距离用padding，
+                要想不撑大盒子，在原宽高上减去padding的值
+                或者加上box-sizing:border-box; 
+            */
+            padding-top: 20px;
+            box-sizing:border-box;
+        }
+        li{
+            width: 234px;
+            height: 42px;
+            line-height: 42px;
+            list-style: none;
+            
+        }
+        li:hover{
+            background: rgb(252, 80, 9);
+        }
+        a{  
+            /* 文字 与盒子有一定距离，且文字本身没有背景颜色，用margin，写在文字标签的css效果中 */
+            margin-left: 50px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        span{
+            margin-right: 24px;
+            float: right;
+            color: rgb(217, 217, 217);
+        }
+    </style>
+</head>
+<body>
+    <!-- 一个大盒子里装了十个列表标签，每个列表标签里都是一个a标签，最右边的小箭头用span标签来设置格式-->
+    <div class="main">
+        <ul>
+            <li>
+                <a href="#">手机 电话卡</a>
+                <span>></span>
+            </li>
+            <li>
+                <a href="#">手机 电话卡</a>
+                <span>></span>
+            </li>
+            <li>
+                <a href="#">手机 电话卡</a>
+                <span>></span>
+            </li>
+            <li>
+                <a href="#">手机 电话卡</a>
+                <span>></span>
+            </li>
+            <li>
+                <a href="#">手机 电话卡</a>
+                <span>></span>
+            </li>
+            <li>
+                <a href="#">手机 电话卡</a>
+                <span>></span>
+            </li>
+            <li>
+                <a href="#">手机 电话卡</a>
+                <span>></span>
+            </li>
+            <li>
+                <a href="#">手机 电话卡</a>
+                <span>></span>
+            </li>
+            <li>
+                <a href="#">手机 电话卡</a>
+                <span>></span>
+            </li>
+            <li>
+                <a href="#">手机 电话卡</a>
+                <span>></span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
