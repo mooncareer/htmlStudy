@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0;padding: 0;}
+    .main{
+        width: 254px;
+        height: 193px;
+        overflow: hidden;
+        float: left;
+        position: relative;
+    }
+    /* 如果想要实现中心等比缩放，则要将hover效果放在img上，
+    这时div是一个有固定宽高的盒子，鼠标悬停在img上，
+    img放大后，div这个盒子加上overflow: hidden;
+    就可以将img放大后多出来的部分裁切掉 */
+    /* 同理，加上鼠标悬停效果的是img，而transition是对变化过程进行设置，
+    div并没有变化，被放大的是img，因此，过渡效果也应该加在img上 */
+    img:hover{
+        transform: scale(1.5);
+    }
+    img{
+        transition: 1s linear;;
+    }
+    .text{
+        width: 254px;
+        height: 80px;
+        background: black;
+        float: left;
+        position: absolute;
+        bottom: 0;
+        opacity: 0.6;
+    }
+    p{
+        color: white;
+        text-align: center;
+        margin-top: 13px;
+        font-size: 13px;
+    }
+    a{
+        width: 80px;
+        height: 28px;
+        text-decoration: none;
+        border: oldlace solid 1px;
+        float: left;
+        color: oldlace;
+        font-size: 12px;
+        text-align: center;
+        line-height: 28px;
+        margin-left: 85px;
+        margin-top: 5px;
+    }
+</style>
+<body>
+    <div class="main">
+        <img src="pic1.png" alt="">
+        <div class="text">
+            <p><b>你能懂吗?</b></p>
+            <a href="#">点击查询</a>
+        </div>
+    </div>
+    <div class="main">
+        <img src="pic1.png" alt="">
+        <div class="text">
+            <p><b>你能懂吗?</b></p>
+            <a href="#">点击查询</a>
+        </div>
+    </div>
+    <div class="main">
+        <img src="pic1.png" alt="">
+        <div class="text">
+            <p><b>你能懂吗?</b></p>
+            <a href="#">点击查询</a>
+        </div>
+    </div>
+    <div class="main">
+        <img src="pic1.png" alt="">
+        <div class="text">
+            <p><b>你能懂吗?</b></p>
+            <a href="#">点击查询</a>
+        </div>
+    </div>
+    <div class="main">
+        <img src="pic1.png" alt="">
+        <div class="text">
+            <p><b>你能懂吗?</b></p>
+            <a href="#">点击查询</a>
+        </div>
+    </div>
+    <div class="main">
+        <img src="pic1.png" alt="">
+        <div class="text">
+            <p><b>你能懂吗?</b></p>
+            <a href="#">点击查询</a>
+        </div>
+    </div>
+    
+
+</body>
+</html>
