@@ -3,7 +3,7 @@
 ![Image](https://raw.githubusercontent.com/mooncareer/htmlStudy/master/img/centerScale.png)
 ## [002用背景图片固定来实现小鹿案例](https://www.notion.so/04-247d9813397742bcb5d665106642dfe2)
 <!-- ![Image](https://raw.githubusercontent.com/mooncareer/htmlStudy/master/img/littleLu.png) -->
-<img src="https://raw.githubusercontent.com/mooncareer/htmlStudy/master/img/littleLu.png"  height="334" width="229">
+<img src="https://raw.githubusercontent.com/mooncareer/htmlStudy/master/img/littleLu.png"  height="334px" width="229px">
 ## 003红英案例
 ![Image](https://raw.githubusercontent.com/mooncareer/htmlStudy/master/img/redYin.png)
 ## 004健康页面
