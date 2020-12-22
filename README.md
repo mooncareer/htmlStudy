@@ -10,6 +10,7 @@
 ## 004健康页面
 ![Image](https://raw.githubusercontent.com/mooncareer/htmlStudy/master/img/health.png)
 ## 005小米导航制作
-![Image](https://raw.githubusercontent.com/mooncareer/htmlStudy/master/img/xiaoMiDH.png)
+<!-- ![Image](https://raw.githubusercontent.com/mooncareer/htmlStudy/master/img/xiaoMiDH.png) -->
+![Image](https://raw.githubusercontent.com/mooncareer/htmlStudy/master/img/xiaoMiDH.png#pic_center =130x240)
 ## 006启梦页面
 ![Image](https://raw.githubusercontent.com/mooncareer/htmlStudy/master/img/qiMeng.png)
