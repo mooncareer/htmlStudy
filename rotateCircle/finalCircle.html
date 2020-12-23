@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* 一定要注意设置好，哪个盒子在上方，哪个盒子在下方！！！ */
+        *{margin: 0;padding: 0;}
+        div{
+            width: 150px;
+            height: 150px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        .border{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border-top: 10px black solid;
+            border-left: 10px black solid;
+            border-right: red 10px solid;
+            border-bottom: red 10px solid;
+            transition: 1s;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* 边框线会撑大盒子，使用box-sizing: border-box;可以解决此问题 */
+            box-sizing: border-box;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        div:hover .border{
+            transform:rotate(360deg);
+        }
+        div:hover img{
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="pic1.png" alt="">
+        <div class="border"></div>
+    </div>
+    
+    
+</body>
+</html>
