@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top{
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+        }
+        .case{
+            width: 1200px;
+            height: 300px;
+            animation: 3s play infinite steps(3);
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            float: left;
+
+        }
+        @keyframes play{
+            to{
+                margin-left: -900px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="case">
+            <img src="1.png" alt="">
+            <img src="2.png" alt="">
+            <img src="3.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

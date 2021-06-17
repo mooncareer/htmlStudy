@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .full{
+            width: 50%;
+            height: 600px;
+            overflow: hidden;
+            margin: 30px auto;
+        }
+        .picCase{
+            width: 400%;
+            height: 600px;
+            /* background: blueviolet; */
+            animation: 5s play infinite steps(4);
+        }
+    /*    .pic1,.pic2,.pic3,.pic4{
+            width: 25%;
+            height: 600px;
+            float: left;
+        }*/
+      /*  .pic2{
+            width: 25%;
+            height: 600px;
+            float: left;
+        }
+        .pic3{
+            width: 25%;
+            height: 600px;
+            float: left;
+        }
+        .pic4{
+            width: 25%;
+            height: 600px;
+            float: left;
+        }*/
+        img{
+            width: 25%;
+            height: 600px;
+            float: left;
+        }
+        @keyframes play{
+            to{
+                margin-left: -400%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="full">
+        <div class="picCase">
+            <p class="pic1"><img src="1.png" alt=""></p>
+            <p class="pic1"><img src="2.png" alt=""></p>
+            <p class="pic1"><img src="3.png" alt=""></p>
+            <p class="pic1"><img src="1.png" alt=""></p>
+        </div>
+    </div>
+</body>
+</html>
